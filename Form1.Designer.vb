@@ -31,6 +31,8 @@ Partial Class Form1
         Me.CaseStatementToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LoopToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ArrayToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ProcedureToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -83,7 +85,7 @@ Partial Class Form1
         '
         'Chapter3ToolStripMenuItem
         '
-        Me.Chapter3ToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CaseStatementToolStripMenuItem, Me.LoopToolStripMenuItem, Me.ArrayToolStripMenuItem})
+        Me.Chapter3ToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CaseStatementToolStripMenuItem, Me.LoopToolStripMenuItem, Me.ArrayToolStripMenuItem, Me.ProcedureToolStripMenuItem})
         Me.Chapter3ToolStripMenuItem.Name = "Chapter3ToolStripMenuItem"
         Me.Chapter3ToolStripMenuItem.Size = New System.Drawing.Size(70, 20)
         Me.Chapter3ToolStripMenuItem.Text = "Chapter 3"
@@ -106,11 +108,28 @@ Partial Class Form1
         Me.ArrayToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.ArrayToolStripMenuItem.Text = "Array"
         '
+        'ProcedureToolStripMenuItem
+        '
+        Me.ProcedureToolStripMenuItem.Name = "ProcedureToolStripMenuItem"
+        Me.ProcedureToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ProcedureToolStripMenuItem.Text = "Procedure"
+        '
+        'Button1
+        '
+        Me.Button1.AutoSize = True
+        Me.Button1.Location = New System.Drawing.Point(15, 211)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(94, 25)
+        Me.Button1.TabIndex = 7
+        Me.Button1.Text = "Call Procedure"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(418, 330)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.lblOutput)
         Me.Controls.Add(Me.btnClick)
         Me.Controls.Add(Me.txtName)
@@ -135,4 +154,6 @@ Partial Class Form1
     Friend WithEvents CaseStatementToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents LoopToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ArrayToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ProcedureToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents Button1 As Button
 End Class

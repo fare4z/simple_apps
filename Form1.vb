@@ -32,4 +32,15 @@
 	Private Sub ArrayToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ArrayToolStripMenuItem.Click
 		Form3.ShowDialog()
 	End Sub
+
+	Private Sub ProcedureToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ProcedureToolStripMenuItem.Click
+		Form4.ShowDialog()
+	End Sub
+
+	Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+		Dim classConvert As ConvertPostcode
+		classConvert = New ConvertPostcode()
+		MsgBox(classConvert.DoConvert("fareez"))
+		classConvert.DoMessageBox()
+	End Sub
 End Class
