@@ -1,10 +1,11 @@
 ﻿Public Class Form1
-    Private Sub btnClick_Click(sender As Object, e As EventArgs) Handles btnClick.Click
+	Dim classConvertPostcode As ConvertPostcode = New ConvertPostcode
+	Private Sub btnClick_Click(sender As Object, e As EventArgs) Handles btnClick.Click
 		'	Dim strNama As String = txtName.Text
 		'Dim strOutput As String = "Hello " + strNama
 
 		Dim intScore As Integer = txtName.Text
-		Dim strGrade As String
+		Dim strGrade As String = ""
 
 		Select Case intScore
 			Case 90 To 100
@@ -38,9 +39,14 @@
 	End Sub
 
 	Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-		Dim classConvert As ConvertPostcode
-		classConvert = New ConvertPostcode()
-		MsgBox(classConvert.DoConvert("fareez"))
-		classConvert.DoMessageBox()
+		Dim resultConvert As String = classConvertPostcode.DoConvert(txtName.Text)
+		txtName.Text = resultConvert
+		classConvertPostcode.DoMessageBox()
 	End Sub
+
+	Private Sub Lab3ExerciseToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Lab3ExerciseToolStripMenuItem.Click
+		Form5.ShowDialog()
+	End Sub
+
+
 End Class

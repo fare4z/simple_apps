@@ -32,7 +32,9 @@ Partial Class Form1
         Me.LoopToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ArrayToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ProcedureToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Lab3ExerciseToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -44,7 +46,7 @@ Partial Class Form1
         Me.lblEnter.Name = "lblEnter"
         Me.lblEnter.Size = New System.Drawing.Size(136, 21)
         Me.lblEnter.TabIndex = 0
-        Me.lblEnter.Text = "Enter your name : "
+        Me.lblEnter.Text = "Enter your marks :"
         '
         'txtName
         '
@@ -76,7 +78,7 @@ Partial Class Form1
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Chapter3ToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Chapter3ToolStripMenuItem, Me.ToolStripMenuItem1, Me.Lab3ExerciseToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(418, 24)
@@ -114,6 +116,11 @@ Partial Class Form1
         Me.ProcedureToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.ProcedureToolStripMenuItem.Text = "Procedure"
         '
+        'ToolStripMenuItem1
+        '
+        Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(12, 20)
+        '
         'Button1
         '
         Me.Button1.AutoSize = True
@@ -123,6 +130,12 @@ Partial Class Form1
         Me.Button1.TabIndex = 7
         Me.Button1.Text = "Call Procedure"
         Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Lab3ExerciseToolStripMenuItem
+        '
+        Me.Lab3ExerciseToolStripMenuItem.Name = "Lab3ExerciseToolStripMenuItem"
+        Me.Lab3ExerciseToolStripMenuItem.Size = New System.Drawing.Size(92, 20)
+        Me.Lab3ExerciseToolStripMenuItem.Text = "Lab 3 Exercise"
         '
         'Form1
         '
@@ -137,7 +150,6 @@ Partial Class Form1
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Form1"
-        Me.Text = "Input box"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
@@ -156,4 +168,6 @@ Partial Class Form1
     Friend WithEvents ArrayToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ProcedureToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents Button1 As Button
+    Friend WithEvents ToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents Lab3ExerciseToolStripMenuItem As ToolStripMenuItem
 End Class
